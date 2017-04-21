@@ -18,7 +18,7 @@ We will go through the progressive building of [d3.js](https://d3js.org/) v4 cha
 
 ## A quick D3 Overview
 
->💡**[D3](https://d3js.org/) (Data-Driven Documents or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML. D3 combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual interface for your data. [Source](https://github.com/d3/d3/wiki)
+>💡[**D3**](https://d3js.org/) (Data-Driven Documents or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML. D3 combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual interface for your data. [Source](https://github.com/d3/d3/wiki)
 
 * D3 is a *visualization kernel*
 * Issued from a [reasearch paper](http://vis.stanford.edu/files/2011-D3-InfoVis.pdf) and a long geneaology of tools from Stanford/Berkeley and now UW
@@ -43,16 +43,15 @@ Useful D3-related links:
 * [D3 Google Group](http://groups.google.com/group/d3-js)
 * [JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 * [D3.js Source Code Walkthrough Part 1](http://prajitr.github.io/d3-source-walkthrough-pt1/)
-* [D3, D3.js, d3, d3.js, #d3js?](https://twitter.com/d3js_org/status/827181063508209664)
 * [D3 Workshop slides](https://bost.ocks.org/mike/d3/workshop/#0)
 [a fun, difficult introduction to d3]http://www.macwright.org/presentations/dcjq/
-[OpenVis conference videos](https://openvisconf.com/)
-
-[Distill chart](http://distill.pub/guide/)
+* [OpenVis conference videos](https://openvisconf.com/)
+* d3.js little [code walkthrough](http://prajitr.github.io/d3-source-walkthrough-pt1/)
+* [Distill chart](http://distill.pub/guide/)
 
 > For dynamic diagrams we recommend D3.js. For complex diagrams where you only want to animate part of them, you can draw a static diagram, tag elements of your diagram with classes or ids, and then manipulate them with D3.
 
-* d3.js little [code walkthrough](http://prajitr.github.io/d3-source-walkthrough-pt1/)
+* [D3, D3.js, d3, d3.js, #d3js?](https://twitter.com/d3js_org/status/827181063508209664)
 
 > **D3 or D3.js** = proper name
 > 
