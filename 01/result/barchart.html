@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+<script src="node_modules/d3-selection/build/d3-selection.js"></script>
+</head>
+<body>
+  <script>
+    var width = 800, height = 600;
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    var data = [22, 32, 21, 23, 10, 22, 11, 19, 30, 50];
+
+    var g = svg.append("g").attr("transform", "translate(100, 0)");
+
+    g.selectAll("rect").data(data)
+      .enter().append("rect")
+        .attr("x", function(d, i) { return i * 20 + i*20; })
+        .attr("y", function(d) { return 170 - d; })
+        .attr("height", function(d) { return d; })
+        .attr("width", 100 / data.length);
+
+  </script>
+</body>

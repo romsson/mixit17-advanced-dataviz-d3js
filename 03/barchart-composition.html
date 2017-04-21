@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="../02/node_modules/d3/build/d3.js"></script>
+  <script src="barChart.js"></script>
+  <script src="lineChart.js"></script>
+</head>
+<body>
+<div id="charts">
+  <div class="chart">
+    <div class="title">Main chart</div>
+  </div>
+</div>
+  <script>
+
+// create an svg
+var svg = d3.select(".chart").append('svg').attr("width", 700).attr("height", 400);
+
+var data = [22, 32, 21, 23, 10, 22, 11, 19, 30, 50];
+
+var chart = barChart().width(720).height(200);
+
+svg
+    .datum(data)
+    .call(chart);
+
+  </script>
+</body>

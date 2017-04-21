@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="../02/node_modules/d3/build/d3.js"></script>
+  <script src="barChart.js"></script>
+  <script src="gridChart.js"></script>
+</head>
+<body>
+<div id="charts">
+  <span class="chart">
+    <span class="title"></span>
+  </span>
+  <span class="chart">
+    <span class="title"></span>
+  </span>
+</div>
+  <script>
+
+  // https://mixitconf.org/en/
+  var data = "We want this conference to be more than an IT conference gathering our whole ecosystem: we want it to be accessible (notably by its price), to open it towards broader subjects than our daily routines, with speakers from outside of the field (our aliens)".toLowerCase().split("");
+
+  var charts = [
+    gridChart()
+      .width(400)
+      .height(200),
+
+    barChart()
+      .key(function(d) { return d; })
+      .click(function(d) {
+
+        var new_data = data.filter(function(e) { return e === d.key; })
+
+        d3.select(".chart")
+            .datum(new_data)
+            .call(charts[0]);
+
+            d3.event.stopPropagation();
+      })
+      .width(300)
+      .height(200)
+  ]
+
+  d3.select("body").on("click", function() {
+
+        d3.select(".chart")
+            .datum(data)
+            .call(charts[0]);
+
+  })
+
+  var chart = d3.selectAll(".chart")
+      .data(charts);
+
+  renderAll();
+
+  function render(method) {
+    d3.select(this).datum(data).call(method);
+  }
+
+  function renderAll() {
+    chart.each(render);
+  }
+
+  </script>
+</body>

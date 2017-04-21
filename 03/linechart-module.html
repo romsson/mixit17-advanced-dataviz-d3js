@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="../02/node_modules/d3/build/d3.js"></script>
+  <script src="lineChart.js"></script>
+  <style>
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  </style>
+</head>
+<body>
+  <script>
+
+  var data = [22, 32, 21, 23, 10, 22, 11, 19, 30, 50];
+
+  var chart = lineChart().width(720).height(80);
+
+  d3.select("body")
+      .datum(data)
+      .call(chart);
+
+  setInterval(function() {
+
+      d3.select("body")
+      .datum(d3.range(Math.floor(Math.random()*100)).map(function() { return Math.random(); }))
+      .call(chart);
+
+  }, 1000)
+
+  </script>
+</body>

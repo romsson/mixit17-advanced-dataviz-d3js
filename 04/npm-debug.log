@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.0.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test' ]
+2 info using npm@4.0.3
+3 info using node@v6.0.0
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info lifecycle 04@1.0.0~pretest: 04@1.0.0
+6 verbose lifecycle 04@1.0.0~pretest: unsafe-perm in lifecycle true
+7 verbose lifecycle 04@1.0.0~pretest: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/rvuillemot/Dev/mixit17-advanced-dataviz-d3js/04/node_modules/.bin:/Users/rvuillemot/torch/install/bin:/usr/local/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+8 verbose lifecycle 04@1.0.0~pretest: CWD: /Users/rvuillemot/Dev/mixit17-advanced-dataviz-d3js/04
+9 silly lifecycle 04@1.0.0~pretest: Args: [ '-c',
+9 silly lifecycle   'rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-foo.js -- index.js' ]
+10 silly lifecycle 04@1.0.0~pretest: Returned: code: 0  signal: null
+11 info lifecycle 04@1.0.0~test: 04@1.0.0
+12 verbose lifecycle 04@1.0.0~test: unsafe-perm in lifecycle true
+13 verbose lifecycle 04@1.0.0~test: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/rvuillemot/Dev/mixit17-advanced-dataviz-d3js/04/node_modules/.bin:/Users/rvuillemot/torch/install/bin:/usr/local/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+14 verbose lifecycle 04@1.0.0~test: CWD: /Users/rvuillemot/Dev/mixit17-advanced-dataviz-d3js/04
+15 silly lifecycle 04@1.0.0~test: Args: [ '-c', 'tape \'test/**/*-test.js\'' ]
+16 silly lifecycle 04@1.0.0~test: Returned: code: 1  signal: null
+17 info lifecycle 04@1.0.0~test: Failed to exec test script
+18 verbose stack Error: 04@1.0.0 test: `tape 'test/**/*-test.js'`
+18 verbose stack Exit status 1
+18 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:279:16)
+18 verbose stack     at emitTwo (events.js:106:13)
+18 verbose stack     at EventEmitter.emit (events.js:191:7)
+18 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+18 verbose stack     at emitTwo (events.js:106:13)
+18 verbose stack     at ChildProcess.emit (events.js:191:7)
+18 verbose stack     at maybeClose (internal/child_process.js:850:16)
+18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+19 verbose pkgid 04@1.0.0
+20 verbose cwd /Users/rvuillemot/Dev/mixit17-advanced-dataviz-d3js/04
+21 error Darwin 15.6.0
+22 error argv "/usr/local/Cellar/node/6.0.0/bin/node" "/usr/local/bin/npm" "run" "test"
+23 error node v6.0.0
+24 error npm  v4.0.3
+25 error code ELIFECYCLE
+26 error 04@1.0.0 test: `tape 'test/**/*-test.js'`
+26 error Exit status 1
+27 error Failed at the 04@1.0.0 test script 'tape 'test/**/*-test.js''.
+27 error Make sure you have the latest version of node.js and npm installed.
+27 error If you do, this is most likely a problem with the 04 package,
+27 error not with npm itself.
+27 error Tell the author that this fails on your system:
+27 error     tape 'test/**/*-test.js'
+27 error You can get information on how to open an issue for this project with:
+27 error     npm bugs 04
+27 error Or if that isn't available, you can get their info via:
+27 error     npm owner ls 04
+27 error There is likely additional logging output above.
+28 verbose exit [ 1, true ]

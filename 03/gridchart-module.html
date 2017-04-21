@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="../02/node_modules/d3/build/d3.js"></script>
+  <script src="gridChart.js"></script>
+</head>
+<body>
+  <script>
+
+  var data = d3.range(21);
+
+  var chart = gridChart().width(300).height(200);
+
+  d3.select("body")
+      .datum(data)
+      .call(chart);
+
+  </script>
+</body>
