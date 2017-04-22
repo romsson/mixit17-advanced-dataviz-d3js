@@ -169,34 +169,15 @@ See tests in other toolkits
 
 * [Continuous integration with CircleCI](https://circleci.com/dashboard)
 * [Github badges](https://github.com/boennemann/badges) 
-* Add to a CDN like [`cdnjs`](https://github.com/cdnjs/cdnjs/blob/master/CONTRIBUTING.md#a-issue)
-
-
-
-
-* Various npm stuff: rollup, stagging modes, ..
-
-* Deploy using Heroku
-
-
-`eslint`
-
-config?
-https://github.com/micahstubbs/waterfall-displays/blob/master/.eslintrc
-
-Bundle
-Tag with a new version
-
+* Deploy test version using [Heroku](https://www.heroku.com/)
 
 ### Notes
 * [Creating static data visualizations with D3.js and Node.js](http://www.pyktech.com/blog/150/)
 * [SVG Crowbar](http://nytimes.github.io/svg-crowbar/)
 
-### Pipeline, composition
+## Pipeline, composition
 
-
-https://github.com/biovisualize/piper.js/tree/rollup/src
-
+See https://github.com/biovisualize/piper.js/tree/rollup/src
 
 ## Publish
 
@@ -212,23 +193,13 @@ Or use NPM version
 https://docs.npmjs.com/cli/version
 ```
 
+Also, upload the latest release on github.
 
-If you use NPM 
+Write API Reference which is the documentation of public functions.
 
-`npm install d3-svg` 
+Make it production ready (reducing size, concatenate files, fingerprint with random ID)
 
-https://bost.ocks.org/mike/d3-plugin/
-
-Otherwise, download the latest release. [GITHUB RELEASE]
-
-API Reference which is the documentation
-
-
-* Production ready (reducing size, concatenate files, fingerprint with random ID)
-
-
-
-
+Consider adding to a CDN like [`cdnjs`](https://github.com/cdnjs/cdnjs/blob/master/CONTRIBUTING.md#a-issue)
 
 > For the new library request issue, please make sure it's not a personal project, we have a basic requirement for the popularity, like 100 stars on GitHub or 500 downloads/month on npm registry.
 
